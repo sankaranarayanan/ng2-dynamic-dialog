@@ -1,0 +1,31 @@
+import { OnInit } from '@angular/core';
+import { Content } from '../styles/content';
+import { Style } from '../styles/style';
+import { Behaviour } from '../styles/behaviour';
+import { Callbacks } from '../styles/callbacks';
+export declare class DialogComponent implements OnInit {
+    private callbackController;
+    private displayController;
+    private boundOnComponentCreated;
+    private boundOnComponentDestroyed;
+    ngOnInit(): void;
+    setStyle(dialogStyle: Style): void;
+    setBehaviour(dialogBehaviour: Behaviour): void;
+    setCallbacks(callbacks: Callbacks): void;
+    show(content: Content): void;
+    close(): void;
+    lock(instant: boolean): void;
+    unlock(instant: boolean): void;
+    inTransition(): boolean;
+    private onDialogShown();
+    private onDialogClosed(offDialogClick);
+    private onContentLocked();
+    private onContentUnlocked();
+    private onDialogTransition(transitionState);
+    private onContentTransition(transitionState);
+    private onComponentCreated(component);
+    private onComponentDestroyed();
+    private onButtonClicked(buttonIndex);
+    private onButtonMouseOver(buttonIndex);
+    private onButtonMouseOut(buttonIndex);
+}

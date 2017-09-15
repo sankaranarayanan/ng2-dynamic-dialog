@@ -1,0 +1,75 @@
+import { Style } from '../../styles/style';
+import { Behaviour } from '../../styles/behaviour';
+import { Content } from '../../styles/content';
+export declare class DisplayController {
+    dialogTransitionStates: {
+        NONE: number;
+        TRANSITION_IN: number;
+        TRANSITION_OUT: number;
+    };
+    contentTransitionStates: {
+        NONE: number;
+        TRANSITION_IN: number;
+        TRANSITION_OUT: number;
+        DIMENSIONS: number;
+        LOCKING_OUT: number;
+        LOCKING_IN: number;
+        UNLOCKING_OUT: number;
+        UNLOCKING_IN: number;
+    };
+    buttonState: {
+        IDLE: number;
+        HOVER: number;
+    };
+    lockState: {
+        LOCK: number;
+        UNLOCK: number;
+    };
+    private dialogStyle;
+    private dialogBehaviour;
+    private currentContent;
+    private nextContent;
+    private isActive;
+    private dialogTransition;
+    private contentTransition;
+    private dialogTransitionLerp;
+    private lerpTransition;
+    private lerpStyle;
+    private dialogOpacity;
+    private dialogWidth;
+    private dialogHeight;
+    private contentOpacity;
+    private lockedIconOpacity;
+    private buttonOpacity;
+    private contentChanging;
+    private dimensionsChanging;
+    private currentButtonStates;
+    private currentLockState;
+    private cachedStyles;
+    private dialogShownCallback;
+    private dialogClosedCallback;
+    private contentLockedCallback;
+    private contentUnlockedCallback;
+    private dialogTransitionCallback;
+    private contentTransitionCallback;
+    constructor();
+    setStyle(dialogStyle: Style): void;
+    setBehaviour(dialogBehaviour: Behaviour): void;
+    setEventCallbacks(dialogShownCallback: () => void, dialogClosedCallback: (offDialogClick: boolean) => void, contentLockedCallback: () => void, contentUnockedCallback: () => void, dialogTransitionCallback: (transitionState: number) => void, contentTransitionCallback: (transitionState: number) => void): void;
+    setButtonState(buttonIndex: number, state: number): void;
+    show(content: Content): void;
+    close(offDialogClick: boolean): void;
+    lock(lockState: number, instant: boolean, lockStartedCallback: () => void): void;
+    inTransition(): boolean;
+    private triggerInstantLock(lockState, lockStartedCallback);
+    private setDialogTransitionState(transitionState);
+    private setContentTransitionState(transitionState);
+    private intervalCallback(results, time);
+    private setStyleBackground();
+    private setStyleModalDialog();
+    private setStyleTitle();
+    private setStyleCloseButton();
+    private setStyleLockedIcon();
+    private setStyleButtonText();
+    private setStyleButton(buttonIndex);
+}

@@ -1,50 +1,79 @@
 {
+  "_from": "ng2-dynamic-dialog@2.0.0",
+  "_id": "ng2-dynamic-dialog@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-s0yoqWW2RDeYpc8943uiYWESTro=",
+  "_location": "/ng2-dynamic-dialog",
+  "_phantomChildren": {
+    "symbol-observable": "1.0.4",
+    "when": "3.7.8"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "ng2-dynamic-dialog@2.0.0",
     "name": "ng2-dynamic-dialog",
-    "version": "2.0.0",
-    "license": "MIT",
-    "description": "A dynamically updating modal dialog for use in Angular 2 applications",
-    "private": false,
-    "homepage": "https://github.com/leewinder/ng2-dynamic-dialog",
-    "author": {
-        "name": "Lee Winder",
-        "email": "lee.winder@gmail.com",
-        "url": "www.leewinder.co.uk"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/leewinder/ng2-dynamic-dialog.git"
-    },
-    "bugs": {
-        "url": "https://github.com/leewinder/ng2-dynamic-dialog/issues"
-    },
-    "keywords": [
-        "angular2",
-        "angular 2",
-        "ng2",
-        "typescript",
-        "dialog",
-        "modal"
-    ],
-    "scripts": {
-        "postinstall": "typings install",
-        "typings": "typings"
-    },
-    "dependencies": {
-        "@angular/common": "2.0.0",
-        "@angular/compiler": "2.0.0",
-        "@angular/core": "2.0.0",
-        "@angular/platform-browser": "2.0.0",
-        "core-js": "^2.4.1",
-        "rxjs": "5.0.0-beta.12",
-        "systemjs": "0.19.27",
-        "tslerp": "^1.0.0",
-        "zone.js": "^0.6.23"
-    },
-    "devDependencies": {
-        "concurrently": "^2.2.0",
-        "typescript": "^2.0.0",
-        "typings": "^1.3.2",
-        "codelyzer": "0.0.28",
-        "tslint": "3.15.1"
-    }
+    "escapedName": "ng2-dynamic-dialog",
+    "rawSpec": "2.0.0",
+    "saveSpec": null,
+    "fetchSpec": "2.0.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ng2-dynamic-dialog/-/ng2-dynamic-dialog-2.0.0.tgz",
+  "_shasum": "b34ca8a965b6443798a5cf3de37ba26161124eba",
+  "_spec": "ng2-dynamic-dialog@2.0.0",
+  "_where": "/home/sankar/workspace/clientside_html",
+  "author": {
+    "name": "Lee Winder",
+    "email": "lee.winder@gmail.com",
+    "url": "www.leewinder.co.uk"
+  },
+  "bugs": {
+    "url": "https://github.com/leewinder/ng2-dynamic-dialog/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@angular/common": "2.0.0",
+    "@angular/compiler": "2.0.0",
+    "@angular/core": "2.0.0",
+    "@angular/platform-browser": "2.0.0",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.27",
+    "tslerp": "^1.0.0",
+    "zone.js": "^0.6.23"
+  },
+  "deprecated": false,
+  "description": "A dynamically updating modal dialog for use in Angular 2 applications",
+  "devDependencies": {
+    "codelyzer": "0.0.28",
+    "concurrently": "^2.2.0",
+    "tslint": "3.15.1",
+    "typescript": "^2.0.0",
+    "typings": "^1.3.2"
+  },
+  "homepage": "https://github.com/leewinder/ng2-dynamic-dialog",
+  "keywords": [
+    "angular2",
+    "angular 2",
+    "ng2",
+    "typescript",
+    "dialog",
+    "modal"
+  ],
+  "license": "MIT",
+  "name": "ng2-dynamic-dialog",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leewinder/ng2-dynamic-dialog.git"
+  },
+  "scripts": {
+    "postinstall": "typings install",
+    "typings": "typings"
+  },
+  "version": "2.0.0"
 }
