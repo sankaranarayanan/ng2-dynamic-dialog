@@ -6,7 +6,7 @@
     <ng2-dynamic-dialog-background [displayController]="displayController" [style.opacity]="displayController.dialogOpacity"></ng2-dynamic-dialog-background>
 
     <!-- Main dialog body -->
-    <div [ngStyle]="displayController.setStyleModalDialog()">
+    <div [ngStyle]="displayController.setStyleModalDialog()"  class="modal-popup-dynamic">
 
         <div [style.opacity]="displayController.contentOpacity">
 
